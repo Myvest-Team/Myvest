@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MYVEST-설문조사</title>
+  <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="MYVEST" />
+  <link rel="manifest" href="/assets/site.webmanifest" />
+  <link rel="stylesheet" href="main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>투자 성향 분석 설문조사지</h2>
+    <button id="toggle-theme" class="theme-toggle">🌙 다크 모드</button>
+
+    <form id="survey-form">
+      <div class="form-group">
+        <label>성별</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male" /> 남자</label>
+          <label><input type="radio" name="gender" value="female" /> 여자</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="birthYear">생년월일</label>
+        <select id="birthYear" name="birthYear">
+          <option value="">연도를 선택하세요</option>
+        </select>
+      </div>
+
+      <div id="main"></div>
+
+      <button type="submit" class="submit-btn">제출하기 ✉</button>
+      <div class="message" id="message"></div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  color: #111827;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.submit-container {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 550px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.checkmark {
+  font-size: 60px;
+  color: #10b981; 
+  margin-bottom: 20px;
+  animation: popIn 0.5s ease forwards;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1f2937;
+  word-break: keep-all;
+}
+
+p {
+  font-size: 16px;
+  color: #4b5563; 
+  margin-bottom: 30px;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+
+.back-btn {
+  display: inline-block;
+  background-color: #3b82f6; 
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  word-break: keep-all;
+}
+
+.back-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 12px;
+  color: black;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 10px;
+  word-break: keep-all;
+}
+
+@media (max-width: 500px) {
+  .submit-container {
+    padding: 30px 20px;
+  }
+
+  .checkmark {
+    font-size: 48px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .back-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .copyright {
+    font-size: 11px;
+  }
+
+  #result canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
